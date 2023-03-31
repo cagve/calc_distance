@@ -1,4 +1,4 @@
 #TODO 
 * [ ] Satisfies axioms
 * [ ] New distances
-* [ ] Optimize
+* [ ] Optimize TOO SLOW
