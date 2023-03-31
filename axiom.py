@@ -16,3 +16,7 @@ def satisfy_metric_3(set1,set2,set3,dfunc):
 
     if not dis3<=dis1+dis2:
         print("Not satisfy ax3")
+        print(set1)
+        print(set2)
+        print(set3)
+        return

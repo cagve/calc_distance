@@ -1,8 +1,3 @@
-from scipy.spatial.distance import hamming
-import distance as dis
-
-
-
 def hamming_distance(list1,list2):
     """
     Hamming distance between two strings. If it is a list convert it to string.

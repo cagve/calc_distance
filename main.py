@@ -1,7 +1,5 @@
-import pandas as pd
 import axiom as ax
 import distance as dis
-import functions as func
 from itertools import chain, combinations, product
 
 def powerset(iterable):
@@ -44,12 +42,12 @@ def compute_display(valset,func):
     return result
 
 def satisfy_axiom(valset,func):
-    for i in valset:
-        for j in valset:
-            ax.satisfy_metric_1(i,j, func)
+    m = combinations(valset, 3)
+    for i in m: 
+       ax.satisfy_metric_3(i[0],i[1],i[2],func) 
 
 def test():
-    val = generate_valuations(1)
+    val = generate_valuations(3)
     val = tuple_to_list(val)
     valset = list(powerset(val))
     valset = tuple_to_list(valset)
